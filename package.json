@@ -6,13 +6,13 @@
   "author": "",
   "type": "commonjs",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "scripts": {},
   "dependencies": {
-    "@playwright/test": "^1.62.0",
     "@types/node": "^26.1.1",
     "dotenv": "^17.4.2",
     "typescript": "^7.0.2"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.62.0"
   }
 }
