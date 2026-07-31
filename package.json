@@ -6,13 +6,23 @@
   "author": "",
   "type": "commonjs",
   "main": "index.js",
-  "scripts": {},
-  "dependencies": {
-    "@types/node": "^26.1.1",
-    "dotenv": "^17.4.2",
-    "typescript": "^7.0.2"
+  "scripts": {
+    "test": "playwright test",
+    "format": "prettier --write \"{tests,POMs}/**/*.{ts,tsx,js,jsx,json,css,md}\"",
+    "check": "prettier --check \"{tests,POMs}/**/*.{ts,tsx,js,jsx,json,css,md}\"",
+    "lint": "eslint \"{tests,POMs}/**/*.{ts,tsx,js,jsx}\""
   },
   "devDependencies": {
-    "@playwright/test": "^1.62.0"
+    "@faker-js/faker": "^10.5.0",
+    "@playwright/test": "^1.62.0",
+    "@types/node": "^26.1.1",
+    "@typescript-eslint/eslint-plugin": "^8.14.0",
+    "@typescript-eslint/parser": "^8.14.0",
+    "dotenv": "^17.4.2",
+    "eslint": "^8.57.1",
+    "globals": "^15.11.0",
+    "prettier": "^3.9.6",
+    "prettier-plugin-organize-imports": "^4.1.0",
+    "typescript": "^5.5.4"
   }
 }
